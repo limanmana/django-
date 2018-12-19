@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>结果页</title>
+</head>
+<body>
+  <h1>{{ question.quesiton_text }}</h1>
+  <ul>
+    {% for choice in question.choice_set.all %}
+      <li>{{ choice.choice_text }}-- {{ choice.votes }}</li>
+    {% endfor %}
+  <p>投票成功！</p>
+  <a href="{% url 'polls:detail' question.id %}">继续投票</a>
+  </ul>
+
+</body>
+</html>

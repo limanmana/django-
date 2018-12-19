@@ -1,0 +1,12 @@
+li{
+   color: #a4ede4;
+}
+
+a:link{
+    /*普通状态*/
+    color: royalblue;
+}
+a:visited{
+    /*访问后的链接*/
+    color: chocolate;
+}
